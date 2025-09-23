@@ -25,7 +25,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+ } 
+ 
 /* ----- SMOOTH SCROLL ----- */
 html{
     scroll-behavior: smooth;
@@ -447,6 +451,9 @@ h3{
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+    /* -- */
+    max-width: 100%;
+    box-sizing: border-box;
 }
 .contact-info>h2{
     color: var(--color-white);
@@ -458,6 +465,12 @@ h3{
     gap: 10px;
     color: var(--color-white);
     margin-block: 5px;
+
+    /* =------ */
+    word-break: break-all;       /* allows breaking anywhere */
+  overflow-wrap: anywhere;     /* modern safe wrapping */
+  white-space: normal;         /* prevents one-line overflow */
+  line-height: 1.5;
 }
 .contact-info p>i{
     font-size: 18px;
@@ -483,6 +496,7 @@ h3{
     display: flex;
     gap: 10px;
     width: 100%;
+    
 }
 .input-field{
     width: 50%;
@@ -517,6 +531,7 @@ textarea{
     font-size: 18px;
     rotate: -45deg;
 }
+
 
 /* ----- FOOTER BOX ----- */
 footer{
